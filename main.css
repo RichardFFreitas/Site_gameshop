@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 header
 {
-    padding: 16px 0;
+    padding: 1rem;
     background-color: #182c61;
     color: #ecf0f1;
 }
@@ -15,16 +16,14 @@ body,
 input, 
 textarea
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header,
 section h2,
-section h3,
-form button
+section h3
 {
-    font-family: 'Bungee', cursive;
-    font-weight: normal;
+    font-family: 'Montserrat', cursive;
 }
 
 
@@ -167,4 +166,99 @@ footer
     background-color: #182c61;
     color: #ecf0f1;
     padding: 16px 0;
+}
+
+button
+{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #111397ab;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lista-produtos li img 
+{
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+}
+.lista-produtos li
+{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-produtos
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+@media (max-width: 375px)
+{
+
+
+.lista-produtos li img 
+{
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.store-front
+{
+    width: 100%;
+}
+.brands-list
+{
+    display: flex;
+}
+section .container
+{
+    font-size: 18px;
+    display: block;
+}
+
+.lista-produtos
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav
+{
+    display: none;
+}
+
+.contact-methods
+{
+    display: block;
+}
+
+footer
+{
+    width: 406px;
+
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px)
+{
+
+}
+
+@media (min-width: 1200px)
+{
+
 }
